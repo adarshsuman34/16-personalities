@@ -15,10 +15,10 @@
 
 const QUESTIONS = [
     // ── E/I Dimension (Extraversion vs Introversion) ──
-    { id: 1, text: "I am the life of the party.", dimension: "EI", direction: 1 },
+    { id: 1, text: "I am very fun to be around and usually the center of attention at social events.", dimension: "EI", direction: 1 },
     { id: 2, text: "I don't talk a lot.", dimension: "EI", direction: -1 },
     { id: 3, text: "I feel comfortable around people.", dimension: "EI", direction: 1 },
-    { id: 4, text: "I keep in the background.", dimension: "EI", direction: -1 },
+    { id: 4, text: "I am quiet and prefer not to be noticed by others.", dimension: "EI", direction: -1 },
     { id: 5, text: "I start conversations.", dimension: "EI", direction: 1 },
     { id: 6, text: "I have little to say.", dimension: "EI", direction: -1 },
     { id: 7, text: "I talk to a lot of different people at parties.", dimension: "EI", direction: 1 },
@@ -34,9 +34,9 @@ const QUESTIONS = [
     // ── S/N Dimension (Sensing/Observant vs Intuition) ──
     // Mapped from Openness to Experience: high Openness → Intuitive (N)
     { id: 16, text: "I have a rich vocabulary.", dimension: "SN", direction: -1 },
-    { id: 17, text: "I have difficulty understanding abstract ideas.", dimension: "SN", direction: 1 },
-    { id: 18, text: "I have a vivid imagination.", dimension: "SN", direction: -1 },
-    { id: 19, text: "I am not interested in abstract ideas.", dimension: "SN", direction: 1 },
+    { id: 17, text: "I find it hard to understand complicated theories or things I cannot see or touch.", dimension: "SN", direction: 1 },
+    { id: 18, text: "I am very creative and can easily picture interesting ideas in my mind.", dimension: "SN", direction: -1 },
+    { id: 19, text: "I don’t care much for deep theories; I prefer focusing on real, practical things.", dimension: "SN", direction: 1 },
     { id: 20, text: "I have excellent ideas.", dimension: "SN", direction: -1 },
     { id: 21, text: "I do not have a good imagination.", dimension: "SN", direction: 1 },
     { id: 22, text: "I am quick to understand things.", dimension: "SN", direction: -1 },
@@ -63,22 +63,22 @@ const QUESTIONS = [
     { id: 40, text: "I make people feel at ease.", dimension: "TF", direction: -1 },
     { id: 41, text: "I prioritize logic over feelings when making decisions.", dimension: "TF", direction: 1 },
     { id: 42, text: "I consider how my decisions affect others emotionally.", dimension: "TF", direction: -1 },
-    { id: 43, text: "I value fairness and justice above compassion.", dimension: "TF", direction: 1 },
+    { id: 43, text: "I think it is more important to be fair and follow the rules than to act based on feelings or pity.", dimension: "TF", direction: 1 },
     { id: 44, text: "I find it easy to empathize with others.", dimension: "TF", direction: -1 },
     { id: 45, text: "I believe the best decisions are based on objective analysis.", dimension: "TF", direction: 1 },
 
     // ── J/P Dimension (Judging vs Perceiving) ──
     // Mapped from Conscientiousness: high Conscientiousness → Judging (J)
     { id: 46, text: "I am always prepared.", dimension: "JP", direction: 1 },
-    { id: 47, text: "I leave my belongings around.", dimension: "JP", direction: -1 },
+    { id: 47, text: "I leave my things lying around or keep my stuff close by.", dimension: "JP", direction: -1 },
     { id: 48, text: "I pay attention to details.", dimension: "JP", direction: 1 },
     { id: 49, text: "I make a mess of things.", dimension: "JP", direction: -1 },
-    { id: 50, text: "I get chores done right away.", dimension: "JP", direction: 1 },
+    { id: 50, text: "I do my housework or errands immediately without waiting.", dimension: "JP", direction: 1 },
     { id: 51, text: "I often forget to put things back in their proper place.", dimension: "JP", direction: -1 },
     { id: 52, text: "I like order.", dimension: "JP", direction: 1 },
-    { id: 53, text: "I shirk my duties.", dimension: "JP", direction: -1 },
+    { id: 53, text: "I avoid doing the work or responsibilities I am supposed to do.", dimension: "JP", direction: -1 },
     { id: 54, text: "I follow a schedule.", dimension: "JP", direction: 1 },
-    { id: 55, text: "I am exacting in my work.", dimension: "JP", direction: 1 },
+    { id: 55, text: "I am very careful and strict about making sure my work is perfect.", dimension: "JP", direction: 1 },
     { id: 56, text: "I prefer to go with the flow rather than follow a plan.", dimension: "JP", direction: -1 },
     { id: 57, text: "I like to have things decided and settled.", dimension: "JP", direction: 1 },
     { id: 58, text: "I enjoy keeping my options open.", dimension: "JP", direction: -1 },
